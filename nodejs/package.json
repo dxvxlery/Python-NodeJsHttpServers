@@ -1,0 +1,16 @@
+{
+  "name": "pkg",
+  "version": "1.0.0",
+  "description": "123",
+  "main": "server.js",
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
