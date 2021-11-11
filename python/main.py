@@ -5,7 +5,7 @@ from typing import Collection
 class SimpleHTTPRequestHandler(BaseHTTPRequestHandler):
 
     fruits = ["cherry","banana","watermelon","123"]
-    # определяем метод `do_GET` 
+
     def do_GET(self):
        
         self.send_response(200)
@@ -15,7 +15,7 @@ class SimpleHTTPRequestHandler(BaseHTTPRequestHandler):
         for i in self.fruits:
             self.wfile.write(i.encode()+" ".encode())
         
-    # определяем метод `do_POST` 
+   
     def do_POST(self):
         content_length = int(self.headers['Content-Length'])
         body = self.rfile.read(content_length)
